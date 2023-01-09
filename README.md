@@ -4,7 +4,14 @@
 
 `git clone https://github.com/yshui/picom.git`
 
- `cd picom/
- `git submodule update --init --recursive
- `meson setup --buildtype=release . build
- `ninja -C build
+ `cd picom/`
+ 
+ `git submodule update --init --recursive`
+ 
+ `meson setup --buildtype=release . build`
+ 
+ `ninja -C build`
+
+`ninja -C build install`
+
+`cp picom.sample.conf ~/.config/picom.conf`
